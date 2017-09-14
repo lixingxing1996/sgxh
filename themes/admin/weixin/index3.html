@@ -1,0 +1,112 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li ><a href="{:url('admin/weixin/index')}">所有用户</a></li>
+            <li ><a href="{:url('admin/weixin/index1')}">已经办卡用户</a></li>
+            <li ><a href="{:url('admin/weixin/index2')}">未办卡用户</a></li>
+            <li  class="layui-this">sdmu开通状态</li>
+            
+
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane" action="{:url('admin/weixin/index3')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入姓名或sdmu" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>姓名</th>
+                        <th>山管账号</th>              
+                        <th>状态</th>
+                        <th>sdmu开通状态</th>
+
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="weixin_list" item="vo"}
+                    <tr>
+                        <td class="myid">{$vo.id}</td>
+                        <td>{$vo.username}</td>
+                        <td>{$vo.sdmu}</td>                       
+                        <td>{php}echo $vo['status']==1 ? '启用' : '禁用';{/php}</td>
+                        
+                        <td >{if $vo['sdopen']=='1'}
+                        	<div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>ON</em><i></i></div>
+                        	{else/}
+                        	<div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
+                        	{/if}
+           	
+						</td>
+                        <td>
+                            <a href="{:url('admin/weixin/edit',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">编辑</a>
+                            <a href="{:url('admin/weixin/delete',['id'=>$vo['id']])}" class="layui-btn layui-btn-danger layui-btn-mini ajax-delete">删除</a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+                {$weixin_list->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+	$('.layui-unselect').click(function(){
+		// 获取用户id
+		myid = $(this).parent().siblings('.myid').text();
+		//是否打开
+		opentype = $(this).children('em').text();
+
+		if(opentype == 'ON'){
+			open = '0';
+		}else{
+			open = '1';
+		}
+
+		 $.ajax({  
+                type : "POST",  //提交方式  
+                url : "/admin/weixin/sdajax",//路径  
+                data : { 'open' : open ,'id':myid },
+                 success:function(result){
+					if(result){
+						alert('修改成功！');
+						refresh();
+					}else{
+						alert('联系管理员');
+					}
+				}
+            }); 
+
+
+	})
+	function refresh(){
+	    window.location.reload();//刷新当前页面.
+	     
+	    //或者下方刷新方法
+	    //parent.location.reload()刷新父亲对象（用于框架）--需在iframe框架内使用
+	    // opener.location.reload()刷新父窗口对象（用于单开窗口
+	  //top.location.reload()刷新最顶端对象（用于多开窗口）
+	}
+
+</script>	
+{/block}

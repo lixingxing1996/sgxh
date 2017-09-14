@@ -1,0 +1,155 @@
+[ 2017-09-06T17:16:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '娄煜昊'  AND `sdmu` = '123' LIMIT 1 [ RunTime:0.000282s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:16:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '娄煜昊'  AND `sdmu` = '370686110475' LIMIT 1 [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:16:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '娄煜昊'  AND `sdmu` = '370686110475' LIMIT 1 [ RunTime:0.000195s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:16:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '娄煜昊'  AND `sdmu` = '160507010216' LIMIT 1 [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:16:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '娄煜昊'  AND `sdmu` = '160507010216' LIMIT 1 [ RunTime:0.000221s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:17:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '魏美月'  AND `sdmu` = '16150425110212' LIMIT 1 [ RunTime:0.000295s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:17:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='4' and AuthGroup.status='1' ) [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000202s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:17:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='4' and AuthGroup.status='1' ) [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `os_weixin` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000252s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:17:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000499s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='4' and AuthGroup.status='1' ) [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000126s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:17:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='4' and AuthGroup.status='1' ) [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000133s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:17:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='4' and AuthGroup.status='1' ) [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `os_weixin` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000160s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:18:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`phone`,`status` FROM `os_weixin` WHERE  `username` = '庞通'  AND `sdmu` = '16370103150796' LIMIT 1 [ RunTime:0.000287s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:18:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='6' and AuthGroup.status='1' ) [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_phone` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_phone` WHERE  `status` = 1 LIMIT 0,9 [ RunTime:0.000130s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:18:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='6' and AuthGroup.status='1' ) [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_phone` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_phone` WHERE  `status` = 1 LIMIT 8,9 [ RunTime:0.000133s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:18:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='6' and AuthGroup.status='1' ) [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_phone` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_phone` WHERE  `status` = 1 LIMIT 16,9 [ RunTime:0.000247s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:18:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000469s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='6' and AuthGroup.status='1' ) [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_phone` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_phone` WHERE  `status` = 1 LIMIT 24,9 [ RunTime:0.000242s ]
+
+---------------------------------------------------------------
+[ 2017-09-06T17:18:54+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=api;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_auth_group_access` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `os_auth_group_access` `AuthGroupAccess` LEFT JOIN `os_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='6' and AuthGroup.status='1' ) [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_slide` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `os_slide` WHERE  `status` = 1  AND `cid` = 1 ORDER BY `sort`  DESC [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_weixin` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_weixin` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_phone` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `os_phone` WHERE  `status` = 1 LIMIT 24,9 [ RunTime:0.000131s ]
+
+---------------------------------------------------------------

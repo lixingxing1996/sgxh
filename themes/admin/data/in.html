@@ -1,0 +1,45 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">导入</li>
+            <li ><a href="{:url('admin/data/out')}">导出</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/data/upload')}" method="post" enctype="multipart/form-data">
+
+                	<div class="layui-form-item">
+                        <label class="layui-form-label">Excel文档</label>
+                        <div class="layui-input-block">
+                        	<input type="file" name="excel"/>
+                        	山管用户表：(姓名-山管账号) 手机号码表：(手机号码-手机串号)》
+                        </div>
+                    </div>
+
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">数据表选择</label>
+                        <div class="layui-input-block">
+                            <select name="tab" lay-verify="required">
+						        <option value="weixin">山管用户表</option>
+						        <option value="phone">手机号码表</option> 
+						    </select>
+                        </div>
+                    </div>
+	                
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                           <button class="layui-btn" type="submit" lay-filter="*">上传</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

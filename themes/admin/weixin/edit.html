@@ -1,0 +1,52 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/weixin/index')}">用户管理</a></li>
+       <!--      <li class=""><a href="{:url('admin/weixin/add')}">添加用户</a></li> -->
+            <li class="layui-this">编辑用户</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/weixin/update')}" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="username" value="{$weixin.username}" required  lay-verify="required" placeholder="请输入姓名" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">山管账号</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="sdmu" value="{$weixin.sdmu}" placeholder="请准确输入" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">备注</label>
+                        <div class="layui-input-block">
+                            <textarea name="remark" placeholder="备注信息，请输入" class="layui-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">状态</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="status" value="1" title="启用" {if condition="$weixin.status==1"} checked="checked"{/if}>
+                            <input type="radio" name="status" value="0" title="禁用" {if condition="$weixin.status==0"} checked="checked"{/if}>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="hidden" name="id" value="{$weixin.id}">
+  
+                            <button class="layui-btn" lay-submit lay-filter="*">更新</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

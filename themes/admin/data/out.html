@@ -1,0 +1,63 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li ><a href="{:url('admin/data/in')}">导入</a></li>
+            <li class="layui-this">导出</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/data/download')}" method="post">
+                   <!--  <div class="layui-form-item">
+                        <label class="layui-form-label">导出字段</label>
+                        <div class="layui-input-block">
+
+                          <input type="checkbox" name="name[id]" lay-skin="primary" title="id" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>id</span><i class="layui-icon"></i></div>
+
+                          <input type="checkbox" name="name[username]" lay-skin="primary" title="姓名" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>姓名</span><i class="layui-icon"></i></div>
+
+
+                          <input type="checkbox" name="name[sdmu]" lay-skin="primary" title="sdmu" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>sdmu</span><i class="layui-icon"></i></div>
+
+                          
+                           <input type="checkbox" name="name[sdopen]" lay-skin="primary" title="姓名" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>sdmu开通状态</span><i class="layui-icon"></i></div>
+
+                          <input type="checkbox" name="name[phone]" lay-skin="primary" title="手机号码" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>手机号码</span><i class="layui-icon"></i></div>
+
+                          <input type="checkbox" name="name[phoneid]" lay-skin="primary" title="手机串号" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>手机串号</span><i class="layui-icon"></i></div>
+                          <input type="checkbox" name="name[open]" lay-skin="primary" title="手机开通状态" checked="">
+                          <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>手机开通状态</span><i class="layui-icon"></i></div>
+
+
+
+
+                        </div>
+                    </div> -->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">表格格式</label>
+                        <div class="layui-input-block">
+                            <select name="type" lay-verify="required">
+						        <option value="xls">xls</option>
+						        <option value="xlsx">xlsx</option> 
+						    </select>
+                        </div>
+                    </div>	             
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                           <button class="layui-btn" type="submit" lay-filter="*">导出</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
